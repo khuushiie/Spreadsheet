@@ -29,7 +29,7 @@ This project was built as part of an internship assignment with the goal of deli
 
 ## 🛠️ Setup Instructions
 
-### 1. Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/khuushiie/Spreadsheet.git
