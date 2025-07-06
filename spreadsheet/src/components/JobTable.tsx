@@ -1,27 +1,28 @@
 import * as React from 'react';
+import type { RowType } from '../App';
 
 // Define interfaces for column and row data
 interface Column {
   key: string;
-  title: string | JSX.Element;
+  title: string | React.ReactElement;
 }
 
-interface Row {
-  [key: string]: string | undefined;
-  jobRequest?: string;
-  submitted?: string;
-  status?: string;
-  submitter?: string;
-  url?: string;
-  assigned?: string;
-  priority?: string;
-  dueDate?: string;
-  estValue?: string;
-}
+// interface Row {
+//   [key: string]: string | undefined;
+//   jobRequest?: string;
+//   submitted?: string;
+//   status?: string;
+//   submitter?: string;
+//   url?: string;
+//   assigned?: string;
+//   priority?: string;
+//   dueDate?: string;
+//   estValue?: string;
+// }
 
 interface JobTableProps {
-  rows: Row[];
-  setRows: React.Dispatch<React.SetStateAction<Row[]>>;
+  rows: RowType[];
+  setRows: React.Dispatch<React.SetStateAction<RowType[]>>;
 }
 
 const initialColumns: Column[] = [

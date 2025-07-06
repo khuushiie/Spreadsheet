@@ -14,6 +14,7 @@ export type RowType = {
   dueDate: string;
   estValue: string;
   add: string;
+  [key: string]: string;
 };
 
 const createEmptyRow = (): RowType => ({
