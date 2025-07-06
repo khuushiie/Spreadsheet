@@ -1,0 +1,17 @@
+# Ignore node_modules and dist inside /spreadsheet
+/spreadsheet/node_modules/
+/spreadsheet/dist/
+
+/spreadsheet/.env
+/spreadsheet/.env.*.local
+
+# macOS and Windows junk
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+*.log
